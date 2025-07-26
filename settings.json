@@ -1,0 +1,10 @@
+{
+  "url": "https://www.google.com/",
+  "dp": 1,
+  "x": 100,
+  "y": 100,
+  "width": 450,
+  "height": 800,
+  "resizable": false,
+  "userDataFolder": "{your folder}"
+}

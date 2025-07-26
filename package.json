@@ -1,0 +1,38 @@
+{
+  "name": "w-browseapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "electron": "^37.2.4",
+    "electron-builder": "^26.0.12"
+  },
+  "build": {
+    "appId": "w-browseapp",
+    "win": {
+      "target": [
+        "portable"
+      ],
+      "icon": "iconGreen.ico"
+    },
+    "files": [
+      "**/*",
+      "!settings.json"
+    ],
+    "extraFiles": [
+      {
+        "from": "settings.json",
+        "to": "settings.json"
+      }
+    ]
+  },
+  "scripts": {
+    "start": "electron main.js",
+    "pack": "electron-builder --dir",
+    "build": "electron-builder --win --x64"
+  },
+  "author": "",
+  "license": "ISC"
+}
