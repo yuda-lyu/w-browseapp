@@ -72,3 +72,15 @@ app.once('ready', () => {
 app.on('window-all-closed', () => {
   app.quit();
 });
+
+//package.json:
+// "build": {
+//   "compression": "store", //不壓縮使開啟最快
+//   "asar": true, //先把多檔案包成單檔
+//   "win": { "target": ["portable"] },
+//   ...
+// }
+
+//執行測試: npm run start
+
+//編譯: npm run build

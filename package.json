@@ -12,6 +12,8 @@
   "build": {
     "appId": "w-browseapp",
     "win": {
+      "compression": "store",
+      "asar": true,
       "target": [
         "portable"
       ],
